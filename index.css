@@ -28,7 +28,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -43,7 +43,12 @@ body {
   padding-top: var(--header-height);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: var(--primary-green);
@@ -74,10 +79,10 @@ section {
 }
 
 /* ========== BUTTONS ========== */
-.hero-btn, 
-.add-to-cart-btn, 
-.checkout-btn, 
-.place-order-btn, 
+.hero-btn,
+.add-to-cart-btn,
+.checkout-btn,
+.place-order-btn,
 .send-message-btn,
 button[type="submit"] {
   display: inline-block;
@@ -92,15 +97,15 @@ button[type="submit"] {
   text-align: center;
 }
 
-.hero-btn:hover, 
-.add-to-cart-btn:hover, 
-.checkout-btn:hover, 
+.hero-btn:hover,
+.add-to-cart-btn:hover,
+.checkout-btn:hover,
 .place-order-btn:hover,
 .send-message-btn:hover,
 button[type="submit"]:hover {
   background-color: var(--secondary-green);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .read-more {
@@ -110,7 +115,7 @@ button[type="submit"]:hover {
 }
 
 .read-more::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -128,7 +133,8 @@ button[type="submit"]:hover {
 .header {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/blog2.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/blog2.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -159,18 +165,21 @@ button[type="submit"]:hover {
 }
 
 /* ========== SHOP SECTION ========== */
-.shop-section, .seedlings-section {
+.shop-section,
+.seedlings-section {
   text-align: center;
   padding: 80px 0;
   background-color: #f9f9f9;
 }
 
-.shop-section h1, .seedlings-section h1 {
+.shop-section h1,
+.seedlings-section h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-.shop-section p, .seedlings-section p {
+.shop-section p,
+.seedlings-section p {
   max-width: 800px;
   margin: 0 auto 40px;
   color: #666;
@@ -195,12 +204,14 @@ button[type="submit"]:hover {
   font-weight: 500;
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
   background: var(--primary-green);
   color: var(--white);
 }
 
-.products-container, .seedlings-container {
+.products-container,
+.seedlings-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 30px;
@@ -429,7 +440,8 @@ button[type="submit"]:hover {
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.cart-header, .checkout-header {
+.cart-header,
+.checkout-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -438,7 +450,8 @@ button[type="submit"]:hover {
   margin-bottom: 20px;
 }
 
-.close-cart, .close-checkout {
+.close-cart,
+.close-checkout {
   background: none;
   border: none;
   font-size: 24px;
@@ -453,7 +466,8 @@ button[type="submit"]:hover {
   transition: all 0.3s ease;
 }
 
-.close-cart:hover, .close-checkout:hover {
+.close-cart:hover,
+.close-checkout:hover {
   background-color: var(--light-gray);
   color: var(--danger);
   transform: rotate(90deg);
@@ -981,7 +995,7 @@ footer {
 }
 
 .footer-section h4::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1033,7 +1047,7 @@ footer {
 }
 
 .contact-item span {
-  color: var(--white);
+  color: var(--secondary-green);
   font-size: 16px;
 }
 
@@ -1059,8 +1073,17 @@ footer {
     justify-content: center;
   }
 
-  .contact-item {
-    justify-content: center;
+  .contact-info {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 510px) {
+  .contact-info {
+    width: 95%;
+    text-align: center;
   }
 }
 
@@ -1082,11 +1105,11 @@ footer {
   .text-box h1 {
     font-size: 36px;
   }
-  
+
   .text-box p {
     font-size: 16px;
   }
-  
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -1100,42 +1123,45 @@ footer {
     z-index: 1000;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .nav-links ul {
     flex-direction: column;
     gap: 1.5rem;
   }
-  
+
   .nav-links ul li a {
     display: block;
     font-size: 1.1rem;
     padding: 0.75rem 1rem;
   }
-  
+
   .nav-links.nav-active {
     right: 0;
   }
-  
+
   .fa-bars {
     display: block;
   }
-  
+
   .fa-times {
     display: block;
     position: absolute;
     top: 1rem;
     right: 1rem;
   }
-  
-  .products-container, .seedlings-container, .blog-posts, .benefits-container {
+
+  .products-container,
+  .seedlings-container,
+  .blog-posts,
+  .benefits-container {
     grid-template-columns: 1fr;
   }
-  
+
   .newsletter-form {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .newsletter-form input,
   .newsletter-form button {
     width: 100%;
@@ -1168,17 +1194,17 @@ footer {
   section {
     padding: 60px 0;
   }
-  
+
   .product-actions {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .quantity-selector {
     width: 100%;
     justify-content: center;
   }
-  
+
   .add-to-cart-btn {
     width: 100%;
   }
@@ -1417,7 +1443,8 @@ nav {
 }
 
 .blog-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/blog-header.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/blog-header.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -1445,7 +1472,8 @@ nav {
 }
 
 .about-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/about-header.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/about-header.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -1517,7 +1545,7 @@ nav {
   color: white;
   padding: 12px 24px;
   border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1100;
   opacity: 0;
   transform: translateY(20px);
@@ -1552,7 +1580,7 @@ nav {
 .close-cart:hover {
   background: var(--secondary-green);
   transform: rotate(90deg);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .close-cart i {
