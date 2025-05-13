@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Good Times Farm</title>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="images/GoodTimes logo.png" alt="Good Times Farm Logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times menu-icon" id="hideMenu"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-actions">
+        <div class="cart-icon">
+          <a href="#cart" class="cart-link" aria-label="Shopping Cart">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </div>
+        <i class="fa fa-bars menu-icon" id="showMenu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+   <!-- Shop Section -->
+  <section id="shop" class="shop-section">
+    <h1>Shop Our Products</h1>
+    <p>Browse our selection of farm-fresh products delivered directly from our farm to your home.</p>
+    
+    <div class="product-filter">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="dairy">Dairy</button>
+      <button class="filter-btn" data-filter="poultry">Poultry</button>
+      <button class="filter-btn" data-filter="crops">Crops</button>
+      <button class="filter-btn" data-filter="honey">Honey</button>
+    </div>
+    
+    <div class="products-container">
+      <!-- Dairy Products -->
+      <div class="product-card" data-category="dairy">
+        <div class="product-image">
+          <img src="images/freshmilk.png" alt="Fresh Milk">
+          <div class="product-tag">Fresh</div>
+        </div>
+        <div class="product-info">
+          <h3>Fresh Farm Milk</h3>
+          <p>Pure, creamy milk from our Friesian and Jersey cows. Pasteurized for safety.</p>
+          <div class="product-price">
+            <span class="price">KSh 120</span>
+            <span class="unit">/ liter</span>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn minus">-</button>
+              <input type="number" value="1" min="1" class="qty-input">
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="dairy">
+        <div class="product-image">
+          <img src="images/organicyoghurt.png" alt="Natural Yogurt">
+          <div class="product-tag">Probiotic</div>
+        </div>
+        <div class="product-info">
+          <h3>Natural Yogurt</h3>
+          <p>Creamy yogurt made from our farm's milk. Rich in probiotics and calcium.</p>
+          <div class="product-price">
+            <span class="price">KSh 150</span>
+            <span class="unit">/ 500ml</span>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn minus">-</button>
+              <input type="number" value="1" min="1" class="qty-input">
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poultry Products -->
+      <div class="product-card" data-category="poultry">
+        <div class="product-image">
+          <img src="images/eggs.png" alt="Kienyeji Eggs">
+          <div class="product-tag">Organic</div>
+        </div>
+        <div class="product-info">
+          <h3>Kienyeji Eggs</h3>
+          <p>Fresh, free-range eggs from our indigenous chickens. Rich in flavor and nutrition.</p>
+          <div class="product-price">
+            <span class="price">KSh 600</span>
+            <span class="unit">/ tray</span>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn minus">-</button>
+              <input type="number" value="1" min="1" class="qty-input">
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="poultry">
+        <div class="product-image">
+          <img src="images/poultry.png" alt="Dressed Chicken">
+          <div class="product-tag">Premium</div>
+        </div>
+       <!-- Live Kenbro Chicken -->
+    <div class="product-info">
+       <h3>Live Kienyeji Chicken (Kenbro)</h3>
+        <p>Healthy, free-range Kenbro chickens ideal for backyard rearing or fresh slaughter.</p>
+      <div class="product-price">
+        <span class="price">KSh 1000</span>
+        <span class="unit">/ bird</span>
+      </div>
+      <div class="product-actions">
+       <div class="quantity-selector">
+        <button class="qty-btn minus">-</button>
+        <input type="number" value="1" min="1" class="qty-input">
+         <button class="qty-btn plus">+</button>
+       </div>
+       <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+<!-- Dressed Kenbro Chicken -->
+    <div class="product-info">
+     <h3>Dressed Kienyeji Chicken (Kenbro)</h3>
+     <p>Slaughtered and cleaned Kenbro chicken, ready for cooking. Naturally raised, rich flavor.</p>
+      <div class="product-price">
+        <span class="price">KSh 1,500</span>
+        <span class="unit">/ bird</span>
+      </div>
+      <div class="product-actions">
+      <div class="quantity-selector">
+        <button class="qty-btn minus">-</button>
+        <input type="number" value="1" min="1" class="qty-input">
+        <button class="qty-btn plus">+</button>
+       </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    </div>
+
+      <!-- Crop Products -->
+      <div class="product-card" data-category="crops">
+        <div class="product-image">
+          <img src="images/cassava2.jpg" alt="Cassava Flour">
+        </div>
+        <div class="product-info">
+  <h3>Raw Cassava</h3>
+  <p>Freshly harvested raw cassava roots. Ideal for cooking or processing.</p>
+  <div class="product-price">
+    <span class="price">KSh 50</span>
+    <span class="unit">/ kg</span>
+  </div>
+  <div class="product-actions">
+    <div class="quantity-selector">
+      <button class="qty-btn minus">-</button>
+      <input type="number" value="1" min="1" class="qty-input">
+      <button class="qty-btn plus">+</button>
+    </div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+</div>
+
+      </div>
+
+      <div class="product-card" data-category="crops">
+        <div class="product-image">
+          <img src="images/melon.jpg" alt="Watermelon">
+          <div class="product-tag">Seasonal</div>
+        </div>
+        <div class="product-info">
+          <h3>Fresh Watermelon</h3>
+          <p>Sweet, juicy Sukari F1 watermelon grown using sustainable practices.</p>
+          <div class="product-price">
+            <span class="price">KSh 350</span>
+            <span class="unit">/ piece</span>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn minus">-</button>
+              <input type="number" value="1" min="1" class="qty-input">
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Honey Products -->
+      <div class="product-card" data-category="honey">
+        <div class="product-image">
+          <img src="images/honey.png" alt="Pure Honey">
+          <div class="product-tag">Organic</div>
+        </div>
+        <div class="product-info">
+          <h3>Pure Natural Honey</h3>
+          <p>Raw, unfiltered honey from our apiary. Rich in flavor and health benefits.</p>
+          <div class="product-price">
+            <span class="price">KSh 650</span>
+            <span class="unit">/ 500ml</span>
+          </div>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn minus">-</button>
+              <input type="number" value="1" min="1" class="qty-input">
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="vegetable">
+  <div class="product-image">
+    <img src="images/sukumawiki.png" alt="Sukuma Wiki">
+    <div class="product-tag">Fresh</div>
+  </div>
+  <div class="product-info">
+    <h3>Sukuma Wiki</h3>
+    <p>Freshly harvested sukuma wiki, rich in vitamins and perfect for daily meals.</p>
+    <div class="product-price">
+      <span class="price">KSh 30</span>
+      <span class="unit">/ bunch</span>
+    </div>
+    <div class="product-actions">
+      <div class="quantity-selector">
+        <button class="qty-btn minus">-</button>
+        <input type="number" value="1" min="1" class="qty-input">
+        <button class="qty-btn plus">+</button>
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+<!-- Seedlings Section -->
+<section id="seedlings" class="seedlings-section">
+  <h1>Seedling Services</h1>
+  <p>Grow your own fruit trees with our high-quality, carefully cultivated seedlings. We offer a variety of fruit tree seedlings perfect for Kenyan climate conditions.</p>
+  
+  <div class="product-filter seedlings-filter">
+    <button class="filter-btn active" data-filter="all-seedlings">All Seedlings</button>
+    <button class="filter-btn" data-filter="coconut">Coconut</button>
+    <button class="filter-btn" data-filter="pawpaw">Pawpaw</button>
+    <button class="filter-btn" data-filter="mango">Mango</button>
+    <button class="filter-btn" data-filter="cashew">Cashew</button>
+  </div>
+  
+  <div class="products-container seedlings-container">
+    <!-- Coconut Seedlings -->
+    <div class="product-card" data-category="coconut">
+      <div class="product-image">
+        <img src="images/dwarf.jpeg" alt="Coconut Seedling">
+        <div class="product-tag">Rare</div>
+      </div>
+      <div class="product-info">
+        <h3>Dwarf Coconut Seedlings</h3>
+        <p>Early-fruiting dwarf coconut variety, perfect for home gardens. Starts bearing fruits within 3-4 years.</p>
+        <div class="product-price">
+          <span class="price">KSh 350</span>
+          <span class="unit">/ seedling</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="coconut">
+      <div class="product-image">
+        <img src="images/coconut.jpg" alt="Tall Coconut Seedling">
+        <div class="product-tag">Popular</div>
+      </div>
+      <div class="product-info">
+        <h3>East African Tall Coconut</h3>
+        <p>Hardy tall coconut variety with excellent yield potential. Drought-resistant and well-adapted to coastal regions.</p>
+        <div class="product-price">
+          <span class="price">KSh 300</span>
+          <span class="unit">/ seedling</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pawpaw Seedlings -->
+    <div class="product-card" data-category="pawpaw">
+      <div class="product-image">
+        <img src="images/solosunrise.jpg" alt="Pawpaw Seedling">
+        <div class="product-tag">Fast-growing</div>
+      </div>
+      <div class="product-info">
+        <h3>Solo Pawpaw Seedlings</h3>
+        <p>High-yielding pawpaw variety with sweet, medium-sized fruits. Begins fruiting within 10-12 months after planting.</p>
+        <div class="product-price">
+          <span class="price">KSh 200</span>
+          <span class="unit">/ seedling</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="pawpaw">
+      <div class="product-image">
+        <img src="images/redlady.jpg" alt="Red Lady Pawpaw">
+        <div class="product-tag">Premium</div>
+      </div>
+      <div class="product-info">
+        <h3>Red Lady Pawpaw</h3>
+        <p>Disease-resistant variety with large, sweet fruits. Self-pollinating and suited for both home gardens and commercial production.</p>
+        <div class="product-price">
+          <span class="price">KSh 250</span>
+          <span class="unit">/ seedling</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mango Seedlings -->
+    <div class="product-card" data-category="mango">
+      <div class="product-image">
+        <img src="images/mango.jpg" alt="Apple Mango Seedling">
+        <div class="product-tag">Bestseller</div>
+      </div>
+      <div class="product-info">
+        <h3>Apple Mango Seedlings</h3>
+        <p>Popular variety with fiberless, sweet fruits. Grafted seedlings begin fruiting in 3-4 years with proper care.</p>
+        <div class="product-price">
+          <span class="price">KSh 400</span>
+          <span class="unit">/ seedling</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="mango">
+      <div class="product-image">
+        <img src="images/mangos.jpg" alt="Ngowe Mango Seedling">
+      </div>
+      <div class="product-info">
+        <h3>Ngowe Mango Seedlings</h3>
+        <p>Kenyan favorite with aromatic, juicy fruits. Grafted seedlings ensure true-to-type fruits and earlier harvests.</p>
+        <div class="product-price">
+          <span class="price">KSh 350</span>
+          <span class="unit">/ seedling</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Cashew Nut Seedlings -->
+    <div class="product-card" data-category="cashew">
+      <div class="product-image">
+        <img src="images/cashew.jpg" alt="Cashew Seedling">
+        <div class="product-tag">Hardy</div>
+      </div>
+      <div class="product-info">
+        <h3>Improved Cashew Seedlings</h3>
+        <p>Grafted cashew seedlings from high-yielding mother trees. Drought-tolerant and suited for coastal conditions.</p>
+        <div class="product-price">
+          <span class="price">KSh 300</span>
+          <span class="unit">/ seedling</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- Cassava cuttings -->
+    <div class="product-card" data-category="cassava">
+      <div class="product-image">
+        <img src="images/cassava1.jpg" alt="Cassava Seedling">
+        <div class="product-tag">Hardy</div>
+      </div>
+      <div class="product-info">
+        <h3>Cassava cuttings</h3>
+        <p>We propagate and distribute certified cassava cuttings to farmers to promote food security and income diversification.</p>
+        <div class="product-price">
+          <span class="price">KSh 30</span>
+          <span class="unit">/ cutting</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn minus">-</button>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seedling-services-info">
+    <h2>Our Seedling Services Include:</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Expert Planting Guidance</h3>
+        <p>Our team provides personalized advice on proper planting techniques, spacing, and care specific to each seedling variety.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-truck-pickup"></i>
+        <h3>Delivery & Installation</h3>
+        <p>We offer delivery services and can help with proper installation of your seedlings to ensure optimal growth conditions.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-seedling"></i>
+        <h3>Aftercare Support</h3>
+        <p>Receive ongoing support including fertilization schedules, pest management advice, and pruning guidance as your trees mature.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-users"></i>
+        <h3>Group Training Sessions</h3>
+        <p>Join our regular training sessions to learn advanced techniques for fruit tree management and maximizing yields.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+  <!-- Shopping Cart -->
+  <div id="cart" class="cart-overlay">
+    <div class="cart-container">
+      <div class="cart-header">
+        <h2>Your Shopping Cart</h2>
+        <button class="close-cart"><i class="fa fa-times"></i></button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be added here by JavaScript -->
+        <p class="empty-cart-message">Your cart is empty</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-amount">KSh 0</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Form -->
+  <div id="checkout" class="checkout-overlay">
+    <div class="checkout-container">
+      <div class="checkout-header">
+        <h2>Checkout</h2>
+        <button class="close-checkout"><i class="fa fa-times"></i></button>
+      </div>
+      <div class="checkout-content">
+        <form id="checkout-form">
+          <div class="form-section">
+            <h3>Contact Information</h3>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required>
+            </div>
+          </div>
+          
+          <div class="form-section">
+            <h3>Delivery Address</h3>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" id="address" required>
+            </div>
+            <div class="form-group">
+              <label for="city">City/Town</label>
+              <input type="text" id="city" required>
+            </div>
+            <div class="form-group">
+              <label for="county">County</label>
+              <input type="text" id="county" required>
+            </div>
+          </div>
+          
+          <div class="form-section">
+            <h3>Payment Method</h3>
+            <div class="payment-options">
+              <div class="payment-option">
+                <input type="radio" id="mpesa" name="payment" value="mpesa" checked>
+                <label for="mpesa">M-Pesa</label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="card" name="payment" value="card">
+                <label for="card">Credit/Debit Card</label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="cash" name="payment" value="cash">
+                <label for="cash">Cash on Delivery</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="order-items">
+              <!-- Order items will be added here -->
+            </div>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="order-subtotal">KSh 0</span>
+            </div>
+            <div class="summary-row">
+              <span>Delivery Fee</span>
+              <span id="delivery-fee">KSh 250</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span id="order-total">KSh 0</span>
+            </div>
+          </div>
+          
+          <button type="submit" class="place-order-btn">Place Order</button>
+        </form>
+      </div>
+    </div>
+    </div> <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest updates on new products, farming tips, and exclusive offers straight to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-sections">
+      <div class="footer-socials">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/17eX14Qipe/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/fidelmeir?igsh=MXQzczUyN3ZsN2Q5Zg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/MrEff796?t=1OY_RUcWCGx1NZkqZe6qxQ&s=09" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://youtube.com/@fidelmwaro9050?si=jLkIey65xFknFRoH" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/254799328159" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@goodtimesfarm.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>0799328159</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kaloleni, Kenya</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Good Times Farm. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

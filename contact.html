@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Good Times Farm</title>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="images/GoodTimes logo.png" alt="Good Times Farm Logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times menu-icon" id="hideMenu"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-actions">
+        <div class="cart-icon">
+          <a href="#cart" class="cart-link" aria-label="Shopping Cart">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </div>
+        <i class="fa fa-bars menu-icon" id="showMenu"></i>
+      </div>
+    </nav>
+  </header> 
+  <div class="contact-container">
+    <h1>Contact Good Times Farm</h1>
+    <form action="#" method="POST" class="contact-form">
+      <label for="first-name">First name<span>*</span></label>
+      <input type="text" id="first-name" name="first-name" required />
+
+      <label for="last-name">Last name<span>*</span></label>
+      <input type="text" id="last-name" name="last-name" required />
+
+      <label for="email">Email<span>*</span></label>
+      <input type="email" id="email" name="email" placeholder="Please use a work email" required />
+
+      <label for="county">County/Region<span>*</span></label>
+      <select id="county" name="county" required>
+        <option value="">Please select your county</option>
+        <option value="Kilifi">Kilifi</option>
+        <option value="Mombasa">Mombasa</option>
+        <option value="Kisumu">Kisumu</option>
+        <option value="Nairobi">Nairobi</option>
+        <option value="Nakuru">Nakuru</option>
+        <option value="Kwale">Kwale</option>
+      </select>
+
+      <label for="service">Which service are you enquiring about?<span>*</span></label>
+      <select id="service" name="service" required>
+        <option value="">Please select an option</option>
+        <option value="products">Farm Products</option>
+        <option value="visits">Farm Visits</option>
+        <option value="consultancy">Farm Consultation</option>
+      </select>
+
+      <label for="message">Message<span>*</span></label>
+      <textarea id="message" name="message" placeholder="Let us know what you want more information about" required></textarea>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" required /> I agree to be emailed in response to my enquiry.<span>*</span></label>
+        <label><input type="checkbox" /> I agree to receive marketing communications about Good Times Farm.</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  
+            
+  </section>
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest updates on new products, farming tips, and exclusive offers straight to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <section class="socials">
+        <h3>Feel free to reach out via:</h3>
+    <ul>
+      <div class="footer-socials">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/17eX14Qipe/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/fidelmeir?igsh=MXQzczUyN3ZsN2Q5Zg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/MrEff796?t=1OY_RUcWCGx1NZkqZe6qxQ&s=09" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://youtube.com/@fidelmwaro9050?si=jLkIey65xFknFRoH" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/254799328159" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </ul>
+  <footer>
+    <div class="footer-sections">
+      <div class="footer-socials">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/17eX14Qipe/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/fidelmeir?igsh=MXQzczUyN3ZsN2Q5Zg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/MrEff796?t=1OY_RUcWCGx1NZkqZe6qxQ&s=09" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://youtube.com/@fidelmwaro9050?si=jLkIey65xFknFRoH" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/254799328159" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@goodtimesfarm.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>0799328159</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kaloleni, Kenya</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Good Times Farm. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+  
